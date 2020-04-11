@@ -1,0 +1,89 @@
+* {
+  margin: 0; }
+
+main {
+  position: relative; }
+
+main .banner {
+  position: relative;
+  background: url("../img/about/about_the_only_treasure_banner.png") center center no-repeat;
+  background-size: cover;
+  height: 6.25rem;
+  z-index: 2; }
+
+main .banner .title {
+  text-align: center;
+  padding-top: 2.04688rem;
+  font-size: 0.75rem;
+  color: #fff; }
+
+main .introduction {
+  padding: 0.89063rem 0.375rem 1.5625rem; }
+
+main .introduction p:first-child {
+  font-size: 0.375rem;
+  text-align: center; }
+
+main .introduction p:nth-child(2) {
+  font-size: 0.5rem;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: center;
+  margin-top: 0.26563rem;
+  margin-bottom: 0.6875rem; }
+
+main .introduction p:last-child {
+  font-size: 0.375rem;
+  color: #707980;
+  text-indent: 2em;
+  line-height: 1.5em; }
+
+main .honor {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+
+main .honor .title {
+  font-size: 0.5rem;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.03125rem; }
+
+main .honor .item {
+  margin: 0 2.14063rem 1.09375rem;
+  position: relative;
+  border: 1px solid #F2F6F9; }
+
+main .honor .item img {
+  width: 4.32813rem;
+  height: 5.1875rem;
+  margin: 0.625rem 0.6875rem 0.54688rem; }
+
+main .honor .item .smallImg {
+  height: 3.17188rem;
+  margin: 1.71875rem 0.6875rem 1.64063rem; }
+
+main .honor .item p {
+  font-size: 0.375rem;
+  text-align: center;
+  margin-bottom: 0.46875rem;
+  line-height: 1; }
+
+main .history {
+  height: 7.96875rem;
+  background: #E8F4FF; }
+
+main .history .title {
+  font-size: 0.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0.92188rem auto 0.78125rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+main .history img {
+  width: 9.26563rem;
+  height: 4.875rem;
+  margin-left: 0.35938rem; }

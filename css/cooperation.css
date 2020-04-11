@@ -1,0 +1,132 @@
+main .banner {
+  position: relative;
+  background: url("../img/cooperation/partner_banner.png") center center no-repeat;
+  background-size: cover;
+  height: 6.25rem;
+  margin: 0;
+  z-index: 10; }
+
+main .banner .title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 2.04688rem; }
+
+main .banner .title p {
+  margin: 0; }
+
+main .content {
+  line-height: 1.5;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0; }
+
+main .content .text {
+  margin: 0 0.39063rem; }
+
+main .content .title {
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: #323a40;
+  text-align: center;
+  margin: 0.9375rem 0 0.625rem; }
+
+main .content .secondTitle {
+  font-size: 0.4375rem;
+  color: #323A40;
+  margin: 0.23438rem 0; }
+
+main .content img {
+  display: block;
+  margin: 0.625rem auto; }
+
+main .content .img-1 {
+  width: 6.34375rem;
+  height: 9.09375rem; }
+
+main .content .img-2 {
+  width: 5.39063rem;
+  height: 8.65625rem;
+  margin: 0 auto 0.9375rem; }
+
+main .content .img-3 {
+  width: 3.76563rem;
+  height: 9.32813rem; }
+
+main .content .img-4 {
+  width: 9.25rem;
+  height: 5.59375rem; }
+
+main .content .proxyImg {
+  background: #E8F4FF;
+  height: 15.48438rem; }
+
+main .content .proxyImg .img-5 {
+  padding-top: 0.625rem;
+  margin: 0 auto;
+  width: 4.51563rem;
+  height: 13.875rem; }
+
+main .content .img-6 {
+  width: 9.25rem;
+  height: 3.92188rem; }
+
+main .contactWrap {
+  position: relative;
+  background: #E8F4FF;
+  padding: 0.625rem 0.39063rem 0.78125rem; }
+
+main .contactWrap .center {
+  font-size: 0.375rem;
+  font-weight: bold;
+  color: #323A40;
+  line-height: 21px;
+  margin: 0;
+  text-align: center; }
+
+main .contactWrap .contact {
+  margin: 0px auto;
+  margin-top: 0.90625rem;
+  display: flex;
+  justify-content: space-between; }
+
+main .contactWrap .contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+main .contactWrap .contact ul li {
+  font-size: 0.375rem;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #707980; }
+
+main .contactWrap .contact .tel {
+  position: absolute;
+  top: 1.5625rem;
+  left: 2.26563rem;
+  height: 0.59375rem;
+  width: 0.59375rem;
+  margin: 0; }
+
+main .contactWrap .contact .mail {
+  position: absolute;
+  top: 1.5625rem;
+  right: 2.3125rem;
+  height: 0.59375rem;
+  width: 0.59375rem;
+  margin: 0; }
+
+/* .duigegui {
+  display: inline-block;
+  float: left;
+  width: 3em;
+  text-align: justify;
+  line-height: 18px;
+  height: 18px; }
+
+.duigegui::after {
+  content: '';
+  display: inline-block;
+  width: 100%; } */

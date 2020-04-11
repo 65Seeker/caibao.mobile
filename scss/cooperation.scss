@@ -1,0 +1,160 @@
+@function px($px) {
+    @return $px/$designWidth*10+rem;
+}
+
+$designWidth:640;
+
+main .banner {
+    position: relative;
+    background: url("../img/cooperation/partner_banner.png") center center no-repeat;
+    background-size: cover;
+    height: px(400);
+    margin: 0;
+    z-index: 10;
+}
+
+main .banner .title {
+    font-size: px(48);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: px(131);
+}
+
+main .banner .title p {
+    margin: 0;
+}
+
+main .content {
+    line-height: 1.5;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+main .content .text {
+    margin: 0 px(25);
+}
+
+main .content .title {
+    font-size: px(32);
+    font-weight: bold;
+    color: rgba(50, 58, 64, 1);
+    text-align: center;
+    margin: px(60) 0 px(40);
+}
+
+main .content .secondTitle {
+    font-size: px(28);
+    color: #323A40;
+    margin: px(15) 0;
+}
+
+main .content img {
+    display: block;
+    margin: px(40) auto;
+}
+
+main .content .img-1 {
+    width: px(406);
+    height: px(582);
+}
+
+main .content .img-2 {
+    width: px(345);
+    height: px(554);
+    margin: 0 auto px(60);
+}
+
+main .content .img-3 {
+    width: px(241);
+    height: px(597);
+}
+
+main .content .img-4 {
+    width: px(592);
+    height: px(358);
+}
+
+main .content .proxyImg {
+    background: #E8F4FF;
+    height: px(991);
+}
+
+main .content .proxyImg .img-5 {
+    padding-top: px(40);
+    margin: 0 auto;
+    width: px(289);
+    height: px(888);
+}
+
+main .content .img-6 {
+    width: px(592);
+    height: px(251);
+}
+
+main .contactWrap {
+    position: relative;
+    background: #E8F4FF;
+    padding: px(40) px(25) px(50);
+}
+
+main .contactWrap .center {
+    font-size: px(24);
+    font-weight: bold;
+    color: #323A40;
+    line-height: 21px;
+    margin:0 ;
+    text-align: center;
+}
+
+main .contactWrap .contact {
+    margin: 0px auto;
+    margin-top: px(58);
+    display: flex;
+    justify-content: space-between;
+}
+
+main .contactWrap .contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main .contactWrap .contact ul li {
+    font-size: px(24);
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(112, 121, 128, 1);
+}
+
+main .contactWrap .contact .tel {
+    position: absolute;
+    top: px(100);
+    left: px(145);
+    height: px(38);
+    width: px(38);
+    margin: 0;
+}
+
+main .contactWrap .contact .mail {
+    position: absolute;
+    top: px(100);
+    right: px(148);
+    height: px(38);
+    width: px(38);
+    margin: 0;
+}
+.duigegui{
+    display: inline-block;
+    float: left;
+    width: 3em;
+    text-align: justify;
+    line-height: 18px;
+    height: 18px;
+  }
+  .duigegui::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }

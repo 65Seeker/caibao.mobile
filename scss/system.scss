@@ -1,0 +1,117 @@
+@function px($px) {
+    @return $px/$designWidth*10+rem;
+}
+
+$designWidth:640;
+
+main .navWrap {
+    background: #F5F6F9;
+}
+
+
+main .navWrap .titleWrap {
+    width: px(640);
+    height: px(80);
+    position: relative;
+    line-height: px(80);
+    padding-left: px(37);
+}
+
+main .navWrap .titleWrap i:not(.switch) {
+    background: #1190FF;
+    width: px(6);
+    height: px(26);
+    position: absolute;
+    top: px(27);
+    left: px(20);
+}
+
+main .navWrap .titleWrap .switch {
+    background: url("../img/system/选择.png") center center no-repeat;
+    background-size: cover;
+    height: px(24);
+    width: px(24);
+    position: absolute;
+    top: px(29);
+    right: px(65);
+}
+
+main .navWrap .titleWrap .titleTag {
+    font-size: px(24);
+    color: #333333;
+    font-weight: bold;
+}
+
+main .systemNavWrap {
+    display: none;
+}
+
+main .systemNavWrap .systemNav {
+    position: absolute;
+    top: px(168);
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+    background: #F5F6F9;
+    padding: px(13) px(20);
+}
+
+main .systemNavWrap .systemNav .systemTag {
+    height: px(60);
+    width: px(189);
+    color: #333;
+    background: inherit;
+    border: 1px solid #DDDEE2;
+    font-size: px(20);
+    margin: 0 px(10) px(10) 0;
+    text-align: center;
+    line-height: px(60);
+}
+main .systemNavWrap .systemNav .systemTag:nth-child(3n){
+    margin: 0 0 px(10) 0;
+}
+main .systemNavWrap .systemNav .systemTag.active{
+    color: #fff;
+    background: #108FFF;
+    border: 1px solid #108FFF;
+}
+
+main .contentWrap .content {
+    display: none;
+}
+
+main .contentWrap .content img{
+    width: px(640);
+    height: px(400);
+}
+main .contentWrap #system-1 img:last-child,
+main .contentWrap #system-1 img:last-child,
+main .contentWrap #system-1 img:last-child{
+    height: px(480);
+    margin-bottom: px(44);
+}
+main .contentWrap .content .title{
+    font-size: px(30);
+    color: #333;
+    text-align: center;
+    margin: px(30) 0;
+}
+main .contentWrap .content .text{
+    font-size: px(24);
+    text-indent: 2em;
+    line-height: 1.5;
+    margin-bottom: px(44);
+}
+main .contentWrap .content .mac{
+    width: px(600);
+    height: px(486);
+    display: inline-block;
+    margin: 0 px(20) px(20);
+}
+#mac3{
+    width: px(600);
+    height: px(486);
+}

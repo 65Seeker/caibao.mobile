@@ -1,0 +1,37 @@
+@function px($px) {
+    @return $px/$designWidth*10+rem;
+}
+
+$designWidth:640;
+
+main .download {
+    background: #E8F4FF;
+    padding: px(100) px(50) px(65);
+}
+
+main .download .title {
+    color: #323A40;
+    font-size: px(38);
+    text-align: center;
+}
+
+main .download .prompt {
+    font-size: px(24);
+}
+
+main .download .teacher,
+main .download .student {
+    font-size: px(24);
+    color: #323A40;
+    text-align: center;
+    margin: px(50) 0 px(32);
+}
+
+main .download .student p,
+main .download .teacher p{
+}
+
+main .download .teacher img,
+main .download .student img{
+    height: px(240);
+}

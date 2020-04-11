@@ -1,0 +1,179 @@
+@function px($px) {
+    @return $px/$designWidth*10+rem;
+}
+
+$designWidth:640;
+*{
+    margin: 0;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    // scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: px(14);
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.clearfix {
+    z-index: 1;
+}
+
+.scrollTop {
+    background-image: url("../img/index/selected_top.png");
+    position: fixed;
+    top: 38%;
+    right: 0%;
+    width: px(56);
+    height: px(56);
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#topNavBar .logoWrap {
+    height: px(88);
+    width: 100%;
+}
+
+#topNavBar .logoImg {
+    width: px(110);
+    height: px(60);
+    padding: px(14) px(24);
+}
+
+#topNavBar .openNav {
+    width: px(44);
+    height: px(44);
+    padding: px(22) px(24);
+}
+
+#topNavBar .closeNav {
+    width: px(44);
+    height: px(44);
+    padding: px(22) px(24);
+    display: none;
+}
+
+#topNavBar .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    margin-right: -px(15);
+    padding: 0;
+    position: absolute;
+    top: px(88);
+    left: 0;
+    z-index: 999;
+    background: #fff;
+    width: px(640);
+}
+
+#topNavBar .menu li {
+    border-bottom: 1px #ddeeff solid;
+}
+
+#topNavBar .menu li a {
+    font-size: px(24);
+    height: px(60);
+    color: #323A40;
+    text-decoration: none;
+    display: inline-block;
+    width: px(640);
+    line-height: px(60);
+    text-indent:1em;
+}
+
+#topNavBar .menu .item.active {
+    background: #E8F4FF;
+}
+
+#topNavBar .menu .active>.link {
+    color: #1190FF !important;
+}
+
+footer {
+    background: #232730;
+    color: #fff;
+    line-height: px(21);
+    position: relative;
+    width: 100%;
+}
+
+footer .companyInfo {
+    margin: 0 auto;
+    width: px(600);
+    padding: px(50) 0 px(46);
+}
+footer .companyInfo .local{
+    background: url("../img/index/location.png");
+    height: px(17);
+    width: px(12);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: px(6);
+    left: px(172);
+}
+
+footer .companyInfo p{
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    font-size: px(24);
+    line-height: 1.5em;
+    position: relative;
+}
+
+footer .companyInfo p:nth-child(2) {
+    font-size: px(36);
+    font-family: FZLTTHK--GBK1-0;
+    font-weight: bold;
+}
+
+footer .companyInfo p:nth-child(3) {
+    font-size: px(24);
+    font-family: FZLTTHK--GBK1-0;
+    font-weight: bold;
+
+}
+
+footer .companyInfo p:nth-child(5) {
+    font-size: px(34);
+    padding-bottom: px(4);
+    font-weight: bold;
+    margin-top: px(50);
+    margin-bottom: px(11);
+}
+
+footer .companyInfo p:nth-child(7),
+footer .companyInfo p:nth-child(9) {
+    font-size: px(22);
+    margin-top: px(11);
+    margin-bottom: px(20);
+}
+
+footer .filing {
+    position: absolute;
+    bottom: 0px;
+    left: 18%;
+    color: #707980;
+}

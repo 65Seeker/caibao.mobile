@@ -1,0 +1,229 @@
+@function px($px) {
+    @return $px/$designWidth*10+rem;
+}
+
+$designWidth:640;
+
+main {
+    position: relative;
+}
+
+main .banner {
+    position: relative;
+    background: url("../img/product/背景01.png") center center no-repeat;
+    background-size: cover;
+    height: px(400);
+    z-index: 2;
+}
+
+main .banner .title {
+    text-align: center;
+    padding-top: px(131);
+    font-size: px(32);
+    color: #fff;
+    font-weight: bold;
+}
+
+main .content .mode {
+    padding: px(20) px(20) px(117);
+}
+
+main .content .mode .background {
+    background: url("../img/product/背景02.png") center center no-repeat;
+    background-size: cover;
+    height: px(350);
+    width: px(600);
+    z-index: 2;
+}
+
+main .content .mode .background .title {
+    font-size: px(28);
+    font-weight: bold;
+    color: #fff;
+    padding-top: px(294);
+    padding-left: px(35);
+}
+
+main .content .mode .text {
+    font-size: px(16);
+    color: #333;
+    text-indent: 2em;
+    padding-top: px(22);
+}
+
+main .videoSystem {
+    background: #F5F6F9;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main .videoSystem .titleWrap {
+    width: px(640);
+    height: px(80);
+    position: relative;
+    line-height: px(80);
+    padding-left: px(37)
+}
+
+main .videoSystem .titleWrap i {
+    background: #1190FF;
+    width: px(6);
+    height: px(26);
+    position: absolute;
+    top: px(27);
+    left: px(20);
+}
+
+main .videoSystem .titleWrap .title {
+    font-size: px(24);
+    color: #333333;
+    font-weight: bold;
+}
+
+main .videoSystem .item:nth-child(2n) {
+    width: px(290);
+    height: px(258);
+    margin: 0 0 px(20) px(20);
+}
+
+main .videoSystem .item {
+    width: px(290);
+    height: px(258);
+    margin: 0 px(20) px(20) px(20);
+}
+
+main .videoSystem .item a img {
+    width: px(290);
+    height: px(258);
+}
+
+main .system {}
+
+main .system .titleWrap {
+    width: px(640);
+    height: px(80);
+    position: relative;
+    line-height: px(80);
+    padding-left: px(37)
+}
+
+main .system .titleWrap i {
+    background: #1190FF;
+    width: px(6);
+    height: px(26);
+    position: absolute;
+    top: px(27);
+    left: px(20);
+}
+
+main .system .titleWrap .title {
+    font-size: px(24);
+    color: #333333;
+    font-weight: bold;
+}
+
+main .system .systemNav {
+    list-style: none;
+    display: flex;
+    height: px(88);
+    padding: 0;
+    line-height: px(88);
+    justify-content: space-around;
+}
+
+main .system .systemNav li {
+    position: relative;
+    color: #333;
+    font-size: px(24);
+    font-weight: bold;
+}
+
+main .system .systemNav li.active i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: px(6);
+    width: px(70);
+    background: #1190FF;
+}
+
+main .system .content-first,
+main .system .content-second,
+main .system .content-thrid {
+    font-size: px(24);
+    color: #fff;
+    text-indent: 2em;
+    padding: px(26) px(20) px(56);
+    background: #1190FF;
+}
+main .system .content-first img{
+    width: px(600);
+    height: px(373);
+    padding-top: px(25);
+}
+main .system .content-second img{
+    width: px(600);
+    height: px(400);
+    padding-top: px(25);
+}
+main .system .content-thrid img{
+    width: px(600);
+    height: px(244);
+    padding-top: px(25);
+}
+main .system .content-thrid .img-1{
+    width: px(600);
+    height: px(271);
+    padding-top: px(25);
+}
+
+main .app {
+
+}
+main .app .titleWrap {
+    width: px(640);
+    height: px(80);
+    position: relative;
+    line-height: px(80);
+    padding-left: px(37)
+}
+
+main .app .titleWrap i {
+    background: #1190FF;
+    width: px(6);
+    height: px(26);
+    position: absolute;
+    top: px(27);
+    left: px(20);
+}
+
+main .app .titleWrap .title {
+    font-size: px(24);
+    color: #333333;
+    font-weight: bold;
+}
+
+main .app p:not(.title) {
+    font-size: px(24);
+    color: #333333;
+    font-weight: bold;
+    text-indent: 2em;
+    padding: 0 px(20) px(65);
+}
+
+main .app .imgWrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+main .app .imgWrap .img-1{
+    width: px(574);
+    height: px(380);
+    margin-top: px(66);
+}
+main .app .imgWrap .img-2{
+    width: px(403);
+    height: px(369);
+    margin-bottom: px(47);
+}

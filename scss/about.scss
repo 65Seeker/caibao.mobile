@@ -1,0 +1,110 @@
+@function px($px) {
+    @return $px/$designWidth*10+rem;
+}
+
+$designWidth:640;
+*{
+    margin: 0;
+}
+main {
+    position: relative;
+}
+
+main .banner {
+    position: relative;
+    background: url("../img/about/about_the_only_treasure_banner.png") center center no-repeat;
+    background-size: cover;
+    height: px(400);
+    z-index: 2;
+}
+
+main .banner .title {
+text-align: center;
+padding-top: px(131);
+font-size: px(48);
+color: #fff;
+}
+
+main .introduction {
+    padding: px(57) px(24) px(100);
+}
+
+main .introduction p:first-child {
+    font-size: px(24);
+    text-align: center;
+}
+
+main .introduction p:nth-child(2) {
+    font-size: px(32);
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: px(17);
+    margin-bottom: px(44);
+}
+
+main .introduction p:last-child {
+    font-size: px(24);
+    color: rgba(112, 121, 128, 1);
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+
+main .honor {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+main .honor .title {
+    font-size: px(32);
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: px(66);
+}
+
+
+main .honor .item {
+    margin: 0 px(137) px(70);
+    position: relative;
+    border: 1px solid #F2F6F9;
+}
+
+main .honor .item img {
+    width: px(277);
+    height: px(332);
+    margin: px(40) px(44) px(35);
+}
+
+main .honor .item .smallImg {
+    height: px(203);
+    margin: px(110) px(44) px(105);
+  }
+
+main .honor .item p {
+    font-size: px(24);
+    text-align: center;
+    margin-bottom: px(30);
+    line-height: 1;
+}
+
+main .history{
+    height: px(510);
+    background: #E8F4FF;
+}
+
+main .history .title{
+    font-size: px(32);
+    font-weight: bold;
+    line-height: 1;
+    margin: px(59) auto px(50);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+main .history img{
+    width: px(593);
+    height: px(312);
+    margin-left: px(23);
+}

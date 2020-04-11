@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合作共赢</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cooperation.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        var pageWidth = window.innerWidth
+        document.write('<style>html{font-size:' + pageWidth / 10 + 'px;}</style>')
+    </script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <header id="topNavBar">
+        <div class="logoWrap">
+            <img src="../img/index/logo.png" alt="logo" class="logoImg fl">
+            <img src="../img/index/more_menu_icon.png" alt="open" class="openNav fr">
+            <img src="../img/index/shut_menu_icon.png" alt="close" class="closeNav fr">
+        </div>
+        <ul class="menu">
+            <li class="item"><a class="link" href="./index.html">首页</a></li>
+            <li class="item"><a class="link" href="./about.html">关于才宝</a></li>
+            <li class="item"><a class="link" href="./product.html">产品及解决方案</a></li>
+            <li class="item"><a class="link" href="./case.html">典型案例</a></li>
+            <li class="item active"><a class="link" href="./cooperation.html">合作共赢</a></li>
+            <li class="item"><a class="link" href="./download.html">在线下载</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="scrollTop" class="scrollTop">
+        </div>
+        <div class="banner">
+            <div class="title">
+                <p>合作共赢，共创未来</p>
+            </div>
+        </div>
+        <div class="content">
+            <p class="title" id="1">市场分析</p>
+            <img src="../img/cooperation/market_p1.png" alt="" class="img-1">
+            <img src="../img/cooperation/market_p2.png" class="img-2">
+            <div class="text" style="position: relative;">
+                <p class="secondTitle">录播教室普及现状</p>
+                <p style="color:#707980;">目前高清录播教室的学校普及率不足 <span style="color:#F21B1B;">
+                        10%</span>
+                </p>
+                <p style="color:#707980;">常态化高清录播教室班班通的普及率不足 <span style="color:#F21B1B;"> 1%</span>
+                </p>
+                <p style="color:rgba(0,128,255,1);">市场需求——教育录播市场规模未来将超过3000亿，面临巨大市场发展机遇
+                </p>
+                <img src="../img/cooperation/market_p3.png" alt="" class="img-3">
+            </div>
+            <p class="title" id="2">收益分析</p>
+            <img src="../img/cooperation/income_analysis_p2.png" alt="" class="img-4">
+            <p class="title" id="3">代理商体系</p>
+            <div class="proxyImg">
+                <img src="../img/cooperation/market_p4.png" alt="" class="img-5">
+            </div>
+            <p class="title" id="4">政策支持</p>
+            <img src="../img/cooperation/policy_support.png" alt="" class="img-6">
+            <p class="title" id="5">招商联系</p>
+            <div class="contactWrap">
+                <p class="center">才宝教育经营中心</p>
+                <div class="contact">
+                    <ul>
+                        <li><span class="duigegui">卢振宗</span>：181-0027-0645
+                        </li>
+                        <li><span style="margin-right: 9px">万</span> 勇：180-2546-2625
+                        </li>
+                        <li>卢丹丹：189-4871-5737
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>caibao@cfwf100.net</li>
+                        <li>wanyong@cfwf100.net</li>
+                        <li>sunny@cfwf100.net</li>
+                    </ul>
+                    <img class="tel" src="../img/cooperation/contact_number_icon.png" alt="">
+                    <img class="mail" src="../img/cooperation/mailbox_icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="companyInfo">
+            <p></i> 全国统一客服热线</p>
+            <p>0633-2296691</p>
+            <p>客服QQ群：239442186</p>
+            <p>（周一至周六 07:30 - 21:00）</p>
+            <p>才宝· 中国分布城市</p>
+            <p><i class="local"></i>中国 · 深圳 · 总部</p>
+            <p>地址：深圳市福田区南园路68号上步大厦11楼B、C、D</p>
+            <p><i class="local"></i>中国 · 山东· 分公司</p>
+            <p>地址：山东省日照市东港区高新六路高新区创业中心1#研发楼12楼
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+<script>
+        //打开关闭导航
+        $(".openNav").click(function () {
+        $(".openNav").hide(2500)
+        $(".closeNav").show(2500)
+        $(".menu").toggle(2500)
+    });
+    $(".closeNav").click(function () {
+        $(".closeNav").hide(2500)
+        $(".openNav").show(2500)
+        $(".menu").toggle(2500)
+    })
+
+
+     //滚动至顶部
+     window.onload = function () {
+        var btn = document.getElementById("scrollTop");
+        var timer = null;
+        var oScroll = true;
+        //滚动条事件,触发时清空定时器
+        window.onscroll = function () {
+            if (!oScroll) {
+                clearInterval(timer);
+            }
+            oScroll = false;
+        }
+        btn.onclick = function () {
+            //加入定时器让他又快到慢滚动到顶部
+            timer = setInterval(function () {
+                //获取当前scrollTop的高度位置（兼容ie和chrom浏览器）
+                var oTop = document.documentElement.scrollTop || document.body.scrollTop;
+                //设置速度由快到慢
+                var ispeed = Math.floor(-oTop / 7);
+                document.documentElement.scrollTop = document.body.scrollTop = oTop + ispeed;
+                oScroll = true;
+                if (oTop == 0) {
+                    clearInterval(timer);
+                }
+            }, 30);
+        }
+    }
+</script>
+</html>

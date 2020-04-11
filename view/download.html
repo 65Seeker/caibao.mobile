@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线下载</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/download.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        var pageWidth = window.innerWidth
+        document.write('<style>html{font-size:' + pageWidth / 10 + 'px;}</style>')
+    </script>
+</head>
+<style>
+</style>
+
+<body>
+    <header id="topNavBar">
+        <div class="logoWrap">
+            <img src="../img/index/logo.png" alt="logo" class="logoImg fl">
+            <img src="../img/index/more_menu_icon.png" alt="open" class="openNav fr">
+            <img src="../img/index/shut_menu_icon.png" alt="close" class="closeNav fr">
+        </div>
+        <ul class="menu">
+            <li class="item"><a class="link" href="./index.html">首页</a></li>
+            <li class="item"><a class="link" href="./about.html">关于才宝</a></li>
+            <li class="item"><a class="link" href="./product.html">产品及解决方案</a></li>
+            <li class="item"><a class="link" href="./case.html">典型案例</a></li>
+            <li class="item"><a class="link" href="./cooperation.html">合作共赢</a></li>
+            <li class="item active"><a class="link" href="./download.html">在线下载</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="download">
+            <p class="title">才宝<span style="color: #0080FF;">正式版</span>下载</p>
+            <p class="prompt" style="text-align:center;color: #999999;">(长按识别二维码下载）</p>
+            <div style="display: flex;justify-content: space-between;">
+                <div class="teacher">
+                    <img src="../img/download/teacher_scan.png" alt="">
+                    <p>Android教师版</p>
+                </div>
+                <div class="student">
+                    <img src="../img/download/student_scan.png" alt="">
+                    <p>Android学生版</p>
+                </div>
+            </div>
+            <p class="prompt" style="color:#F66F6A;">提示：<span class="prompt"
+                    style="color:#707980;">IOS手机版可去应用商店下载</span></p>
+
+        </div>
+    </main>
+    <footer>
+        <div class="companyInfo">
+            <p></i> 全国统一客服热线</p>
+            <p>0633-2296691</p>
+            <p>客服QQ群：239442186</p>
+            <p>（周一至周六 07：30-21：00）</p>
+            <p>才宝· 中国分布城市</p>
+            <p><i class="local"></i>中国 · 深圳 · 总部</p>
+            <p>地址：深圳市福田区南园路68号上步大厦11楼B、C、D</p>
+            <p><i class="local"></i>中国 · 山东· 分公司</p>
+            <p>地址：山东省日照市东港区高新六路高新区创业中心1#研发楼12楼
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script>
+    //打开关闭导航
+    $(".openNav").click(function () {
+        $(".openNav").hide(2500)
+        $(".closeNav").show(2500)
+        $(".menu").toggle(2500)
+    });
+    $(".closeNav").click(function () {
+        $(".closeNav").hide(2500)
+        $(".openNav").show(2500)
+        $(".menu").toggle(2500)
+    })
+</script>
+
+</html>
